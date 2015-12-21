@@ -8,7 +8,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.ufc.lockscreenwidget.MainActivity">
+    tools:context="br.ufc.lockscreenwidget.MainActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
 
    <fragment
        android:id="@+id/fragment_preferences"
@@ -23,5 +28,16 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        />
+
+
+   <com.google.android.gms.ads.AdView
+       android:id="@+id/adView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_alignParentBottom="true"
+       ads:adSize="BANNER"
+       ads:adUnitId="@string/banner_ad_unit_id">
+   </com.google.android.gms.ads.AdView>
 
 </LinearLayout>
